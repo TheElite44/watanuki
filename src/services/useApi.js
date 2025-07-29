@@ -4,7 +4,7 @@ import config from "../config/config";
 
 export const API_BASE_URL =
   import.meta.env.VITE_APP_MODE &&
-  import.meta.env.VITE_APP_MODE === "development"
+  import.meta.env.VITE_APP_MODE === "production"
     ? config.localUrl
     : config.serverUrl;
 
